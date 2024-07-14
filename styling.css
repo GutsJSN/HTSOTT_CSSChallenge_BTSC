@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.maze {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    overflow: hidden;
+    background: lightgreen;
+    margin-bottom: 20px;
+}
+
+.wall {
+    position: absolute;
+    background:  black;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+ 
+.controls {
+    display: flex;
+    gap: 10px;
+}
